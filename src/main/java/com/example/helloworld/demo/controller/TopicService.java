@@ -17,4 +17,7 @@ public class TopicService {
     public void insertTopic(Topic topic){
         repository.save(topic);
     }
+    public void deleteTopic(String topicId){
+        repository.deleteById(topicId);
+    }
 }
